@@ -318,3 +318,4 @@ Enviar la URL del PR al grupo de WhatsApp del Cohort 1:
 **Programa:** Samsung Innovation Campus Chile 2026
 **Ejecutora:** [Innovacien](https://innovacien.org) — contacto@innovacien.org
 **Licencia:** MIT
+#cambio

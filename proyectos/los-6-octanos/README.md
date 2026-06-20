@@ -61,11 +61,11 @@ Ejecuta la aplicación:
 
 ## 👥Integrantes del Equipo
 
-Laura Díaz
-Nicolás Torres
-Noemi Calabuig
-Pablo Rojas
-Vicente Yunusic
-Nicol Sandoval
+*Laura Díaz
+*Nicolás Torres
+*Noemi Calabuig
+*Pablo Rojas
+*Vicente Yunusic
+*Nicol Sandoval
 
 Fuente de datos: Comisión Nacional de Energía (CNE), Chile.

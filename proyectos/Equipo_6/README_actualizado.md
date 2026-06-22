@@ -153,9 +153,9 @@ Python · Streamlit · Pandas · Plotly · NumPy · scikit-learn (modelo).
 
 | Rol | GitHub | Nombre |
 |-----|--------|--------|
-| Integrante 1 — Dataset, limpieza y EDA | [@FQut](https://github.com/FQut) | `[completar]` |
-| Integrante 2 — Modelo predictivo | [@vi-llou-ta](https://github.com/vi-llou-ta) | `[completar]` |
+| Integrante 1 — Dataset, limpieza y EDA | [@FQut](https://github.com/FQut) | Fiorenza Quezada |
+| Integrante 2 — Modelo predictivo | [@vi-llou-ta](https://github.com/vi-llou-ta) | Matías Villouta |
 | Integrante 3 — Dashboard | [@rariffo](https://github.com/rariffo) | Rubén Riffo García |
-| Integrante 4 — Documentación y presentación | [@me1kimu](https://github.com/me1kimu) | `[completar]` |
+| Integrante 4 — Documentación y presentación | [@me1kimu](https://github.com/me1kimu) | Camilo Rojas |
 
 > Nota para el equipo: completar los nombres faltantes y reemplazar la URL del dashboard una vez publicado.

@@ -9,7 +9,8 @@ Un sistema de recomendación de rutas para la red de transporte público (Transa
 
 ## 👥 Equipo
 * **Daniel Quiroz** - GitHub: [@Veldora2112](https://github.com/Veldora2112)
-* **[Nombre Integrante 2]** - GitHub: [@Usuario2](https://github.com/Usuario2)
+* **Pablo Camus Navarro** - GitHub: [@PaCaNav](https://github.com/PaCaNav)
+* **Jacob** -GitHub:[]()
 
 ---
 
@@ -29,7 +30,9 @@ El proyecto se alimenta de la estructura oficial de transporte metropolitano.
 * **Licencia:** Datos Abiertos / CC BY 4.0.
 
 ---
-
+## Datos Crudos:
+EL dataset 'stop_times.txt' supera el limite de 50 MB, los datos procesados estan en /data, los datos crudos de 'stops.txt' y 'stops_times.txt' estan en:
+    https://drive.google.com/drive/folders/1eQJ7S-DfivQ-RlxMXLr87Km6vAaFXDnw?usp=drive_link
 ## 🏗️ Arquitectura del Sistema
 El proyecto sigue un estándar modular de desarrollo, separando el Pipeline de Datos (ETL) del núcleo de la aplicación:
 
@@ -38,7 +41,8 @@ El proyecto sigue un estándar modular de desarrollo, separando el Pipeline de D
 ├── 📁 data/                        # Almacenamiento de archivos crudos y JSON procesado
 │   ├── stops.txt                   # (Ignorado en git)
 │   ├── stop_times.txt              # (Ignorado en git)
-│   └── dataset_limpio.json         # Base de datos en caché para carga en milisegundos
+|   ├── gtfs_limpio.json
+│   └── arcgis_limpio.json.        # Base de datos en caché para carga en milisegundos
 ├── 📁 notebooks/                   # Jupyter Notebooks de exploración y ETL
 │   ├── 00_prototipo_original.ipynb # Respaldo del prototipo monolítico
 │   ├── 01_eda.ipynb                # Análisis Exploratorio de Datos

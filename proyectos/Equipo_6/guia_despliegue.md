@@ -1,18 +1,50 @@
 # Guía de Despliegue en Streamlit Cloud
 
-Para que el profesor pueda ver y probar nuestro dashboard de forma gratuita desde cualquier navegador, utilizaremos **Streamlit Community Cloud**. Sigue estos 4 pasos:
+Para que el profesor pueda ver y probar nuestro dashboard de forma gratuita desde cualquier
+navegador, usamos **Streamlit Community Cloud**. Sigue estos pasos.
 
-1. **Verificar el archivo `requirements.txt`:**
-   Antes de hacer nada, asegúrate de que todos los cambios (incluido `app.py` y el módulo de riesgo) estén subidos a GitHub (en la rama `main`). **Crucial:** Verifica que en la raíz exista el archivo `requirements.txt` con todas las dependencias listadas (ej. `streamlit`, `pandas`, `numpy`, `scikit-learn`). Si este archivo no está, el despliegue fallará.
+> **Importante:** nuestra app **no está en la raíz** del repositorio, sino dentro de la
+> subcarpeta `proyectos/Equipo_6/` (así lo exige la estructura del curso). Por eso las rutas
+> de este despliegue apuntan a esa subcarpeta, no a la raíz.
 
-2. **Iniciar sesión en Streamlit Cloud:**
-   Ve a [share.streamlit.io](https://share.streamlit.io/) e inicia sesión conectando tu cuenta de GitHub. Esto le dará permisos a Streamlit para leer nuestro repositorio.
+## 1. Verificar los archivos en GitHub
 
-3. **Configurar el despliegue:**
-   - Haz clic en el botón azul **"New app"**.
-   - En el formulario, selecciona nuestro repositorio en el campo **Repository**.
-   - En **Branch**, selecciona `main`.
-   - En **Main file path**, escribe `app.py`.
+Antes de nada, asegúrate de que en la rama que se va a publicar existan, **dentro de
+`proyectos/Equipo_6/`**, estos archivos:
 
-4. **¡Desplegar!**
-   - Haz clic en **"Deploy!"**. Verás una terminal donde Streamlit comienza a instalar las cosas del `requirements.txt`. Toma un par de minutos. Al finalizar, la app cargará automáticamente y podrás copiar la URL pública para enviársela al profesor.
+- `app.py` — la aplicación.
+- `requirements.txt` — las dependencias (streamlit, pandas, plotly, numpy).
+- `data/retail_store_inventory.csv` — el dataset.
+
+La app encuentra el CSV con una ruta relativa al propio `app.py`, así que funciona aunque esté
+en una subcarpeta. Si `requirements.txt` no estuviera, el despliegue fallaría.
+
+## 2. Iniciar sesión en Streamlit Cloud
+
+Ve a [share.streamlit.io](https://share.streamlit.io/) e inicia sesión conectando tu cuenta de
+GitHub. Esto le da permiso a Streamlit para leer el repositorio.
+
+## 3. Configurar el despliegue
+
+Haz clic en **"Create app"** (o "New app") y completa el formulario con **las rutas correctas**:
+
+- **Repository:** `me1kimu/sic_2026_c-p_cohort_1` (o el repositorio donde quede la versión final)
+- **Branch:** la rama donde esté la versión final (por ejemplo `main` una vez consolidado todo)
+- **Main file path:** `proyectos/Equipo_6/app.py`  ← **no escribir solo `app.py`**
+
+(Opcional) Personaliza la URL pública, por ejemplo `grupo-seis-retail`.
+
+## 4. Desplegar
+
+Haz clic en **"Deploy"**. Verás una terminal instalando lo del `requirements.txt` (tarda 1-3
+minutos). Al terminar, la app carga automáticamente y podrás copiar la URL pública para ponerla
+en el README y enviársela al profesor.
+
+## Si el despliegue falla
+
+- **"File does not exist":** revisa que el *Main file path* sea exactamente
+  `proyectos/Equipo_6/app.py`.
+- **Error instalando dependencias:** revisa que `requirements.txt` esté dentro de
+  `proyectos/Equipo_6/`.
+- **"FileNotFoundError" del CSV:** confirma que la carpeta `data/` viajó junto al `app.py`
+  dentro de `proyectos/Equipo_6/`.
